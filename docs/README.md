@@ -1,82 +1,144 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/slatedocs/img/main/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
-  <br>
-  <a href="https://github.com/slatedocs/slate/actions?query=workflow%3ABuild+branch%3Amain"><img src="https://github.com/slatedocs/slate/workflows/Build/badge.svg?branch=main" alt="Build Status"></a>
-  <a href="https://hub.docker.com/r/slatedocs/slate"><img src="https://img.shields.io/docker/v/slatedocs/slate?sort=semver" alt="Docker Version" /></a>
-</p>
+<div align="center">
+  <img alt="Redoc logo" src="https://raw.githubusercontent.com/Redocly/redoc/main//docs/images/redoc.png" width="400px" />
 
-<p align="center">Slate helps you create beautiful, intelligent, responsive API documentation.</p>
+# Generate beautiful API documentation from OpenAPI
 
-<p align="center"><img src="https://raw.githubusercontent.com/slatedocs/img/main/screenshot-slate.png" width=700 alt="Screenshot of Example Documentation created with Slate"></p>
+  [![npm](http://img.shields.io/npm/v/redoc.svg)](https://www.npmjs.com/package/redoc) [![License](https://img.shields.io/npm/l/redoc.svg)](https://github.com/Redocly/redoc/blob/main/LICENSE)
 
-<p align="center"><em>The example above was created with Slate. Check it out at <a href="https://slatedocs.github.io/slate">slatedocs.github.io/slate</a>.</em></p>
+  [![bundle size](http://img.badgesize.io/https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js?compression=gzip&max=300000)](https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js) [![npm](https://img.shields.io/npm/dm/redoc.svg)](https://www.npmjs.com/package/redoc) [![jsDelivr status](https://data.jsdelivr.com/v1/package/npm/redoc/badge)](https://www.jsdelivr.com/package/npm/redoc)
+</div>
 
-Features
-------------
 
-* **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [PayPal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
+## About Redoc
 
-* **Everything on a single page** — Gone are the days when your users had to search through a million pages to find what they wanted. Slate puts the entire documentation on a single page. We haven't sacrificed linkability, though. As you scroll, your browser's hash will update to the nearest header, so linking to a particular point in the documentation is still natural and easy.
+Redoc is an open source tool for generating documentation from OpenAPI (formerly Swagger) definitions.
 
-* **Slate is just Markdown** — When you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. Everything is written in Markdown — even the code samples are just Markdown code blocks.
+By default Redoc offers a three-panel, responsive layout:
 
-* **Write code samples in multiple languages** — If your API has bindings in multiple programming languages, you can easily put in tabs to switch between them. In your document, you'll distinguish different languages by specifying the language name at the top of each code block, just like with GitHub Flavored Markdown.
+- The left panel contains a search bar and navigation menu.
+- The central panel contains the documentation.
+- The right panel contains request and response examples.
 
-* **Out-of-the-box syntax highlighting** for [over 100 languages](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers), no configuration required.
+![Redoc demo](https://raw.githubusercontent.com/Redocly/redoc/main/demo/redoc-demo.png)
 
-* **Automatic, smoothly scrolling table of contents** on the far left of the page. As you scroll, it displays your current position in the document. It's fast, too. We're using Slate at TripIt to build documentation for our new API, where our table of contents has over 180 entries. We've made sure that the performance remains excellent, even for larger documents.
+## Live demo
 
-* **Let your users update your documentation for you** — By default, your Slate-generated documentation is hosted in a public GitHub repository. Not only does this mean you get free hosting for your docs with GitHub Pages, but it also makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you're also welcome to host your docs elsewhere.
+If you want to see how Redoc renders your OpenAPI definition,
+you can try it out online at https://redocly.github.io/redoc/.
 
-* **RTL Support** Full right-to-left layout for RTL languages such as Arabic, Persian (Farsi), Hebrew etc.
+A version of the Swagger Petstore API is displayed by default.
+To test it with your own OpenAPI definition,
+enter the URL for your definition and select **TRY IT**.
 
-Getting started with Slate is super easy! Simply press the green "use this template" button above and follow the instructions below. Or, if you'd like to check out what Slate is capable of, take a look at the [sample docs](https://slatedocs.github.io/slate/).
+## Redoc features
 
-Getting Started with Slate
-------------------------------
+- Responsive three-panel design with menu/scrolling synchronization
+- Support for OpenAPI 3.1, OpenAPI 3.0, and Swagger 2.0
+- Ability to integrate your API introduction into the side menu
+- High-level grouping in side menu with the [`x-tagGroups`](https://redocly.com/docs/api-reference-docs/specification-extensions/x-tag-groups/) specification extension
+- [Simple integration with `create-react-app`](https://redocly.com/docs/redoc/quickstart/react/)
+- Code samples support (with vendor extension) <br>
+  ![code samples in action](docs/images/code-samples-demo.gif)
 
-To get started with Slate, please check out the [Getting Started](https://github.com/slatedocs/slate/wiki#getting-started)
-section in our [wiki](https://github.com/slatedocs/slate/wiki).
+## Usage
 
-We support running Slate in three different ways:
-* [Natively](https://github.com/slatedocs/slate/wiki/Using-Slate-Natively)
-* [Using Vagrant](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Vagrant)
-* [Using Docker](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Docker)
+Redoc is provided as a CLI tool (also distributed as a Docker image), HTML tag, and React component.
 
-Companies Using Slate
----------------------------------
+### Generate documentation from the CLI
 
-* [NASA](https://api.nasa.gov)
-* [Sony](http://developers.cimediacloud.com)
-* [Best Buy](https://bestbuyapis.github.io/api-documentation/)
-* [Travis-CI](https://docs.travis-ci.com/api/)
-* [Greenhouse](https://developers.greenhouse.io/harvest.html)
-* [WooCommerce](http://woocommerce.github.io/woocommerce-rest-api-docs/)
-* [Dwolla](https://docs.dwolla.com/)
-* [Clearbit](https://clearbit.com/docs)
-* [Coinbase](https://developers.coinbase.com/api)
-* [Parrot Drones](http://developer.parrot.com/docs/bebop/)
-* [CoinAPI](https://docs.coinapi.io/)
+If you have Node installed, quickly generate documentation using `npx`:
 
-You can view more in [the list on the wiki](https://github.com/slatedocs/slate/wiki/Slate-in-the-Wild).
+```bash
+npx @redocly/cli build-docs openapi.yaml
+```
 
-Questions? Need Help? Found a bug?
---------------------
+The tool outputs by default to a file named `redoc-static.html` that you can open in your browser.
 
-If you've got questions about setup, deploying, special feature implementation in your fork, or just want to chat with the developer, please feel free to [start a thread in our Discussions tab](https://github.com/slatedocs/slate/discussions)!
+> [Redocly CLI](https://github.com/Redocly/redocly-cli/) does more than docs; check it out and add linting, bundling, and more to your API workflow.
 
-Found a bug with upstream Slate? Go ahead and [submit an issue](https://github.com/slatedocs/slate/issues). And, of course, feel free to submit pull requests with bug fixes or changes to the `dev` branch.
+### Add an HTML element to the page
 
-Contributors
---------------------
+Create an HTML page, or edit an existing one, and add the following within the body tags:
 
-Slate was built by [Robert Lord](https://lord.io) while at [TripIt](https://www.tripit.com/). The project is now maintained by [Matthew Peveler](https://github.com/MasterOdin) and [Mike Ralphson](https://github.com/MikeRalphson).
+```html
+    <redoc spec-url="http://petstore.swagger.io/v2/swagger.json"></redoc>
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
+```
 
-Thanks to the following people who have submitted major pull requests:
+Open the HTML file in your browser, and your API documentation is shown on the page.
 
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
+Add your own `spec-url` to the `<redoc>` tag; this attribute can also be a local file. The JavaScript library can also be installed locally using `npm` and served from your own server, see the [HTML deployment documentation](https://redocly.com/docs/redoc/deployment/html/) for more details.
 
-Also, thanks to [Sauce Labs](http://saucelabs.com) for sponsoring the development of the responsive styles.
+### More usage options
+
+Check out the [deployment documentation](./docs/deployment/intro.md) for more options, and detailed documentation for each.
+
+## Redoc vs. Redocly API Reference
+
+Redoc is Redocly's community-edition product. Looking for something more?
+We also offer [hosted API reference documentation](https://redocly.com/docs/api-registry/guides/api-registry-quickstart/)
+with additional features including:
+
+* Try-it console
+* Automated code samples
+* Pagination
+* Extra theme options
+
+### Documentation and resources
+
+- [Reference docs](https://redocly.com/docs/api-reference-docs/getting-started/) - we take care of the hosting
+- [Redoc](https://redocly.com/docs/redoc/) - detailed documentation for this open source project (also in the `docs/` folder)
+- [Command-line interface to bundle your docs into a web-ready HTML file](https://redocly.com/docs/cli/commands/build-docs/)
+- API linting, bundling, and much more with open source [Redocly CLI](https://redocly.com/docs/cli)
+
+## Showcase
+
+A sample of the organizations using Redocly tools in the wild:
+
+- [Rebilly](https://api-reference.rebilly.com/)
+- [Docker Engine](https://docs.docker.com/engine/api/v1.25/)
+- [Zuora](https://www.zuora.com/developer/api-reference/)
+- [Discourse](http://docs.discourse.org)
+- [Commbox](https://www.commbox.io/api/)
+- [APIs.guru](https://apis.guru/api-doc/)
+- [BoxKnight](https://www.docs.boxknight.com/)
+- [Quaderno API](https://developers.quaderno.io/api)
+
+_Pull requests to add your own API page to the list are welcome_
+
+## Configuration
+
+Redoc is highly configurable, see the [configuration documentation](docs/config.md) for details.
+
+### OpenAPI specification extensions
+Redoc uses the following [specification extensions](https://redocly.com/docs/api-reference-docs/spec-extensions/):
+
+* [`x-logo`](docs/redoc-vendor-extensions.md#x-logo) - is used to specify API logo
+* [`x-traitTag`](docs/redoc-vendor-extensions.md#x-traitTag) - useful for tags that refer to non-navigation properties like Pagination, Rate-Limits, etc
+* [`x-codeSamples`](docs/redoc-vendor-extensions.md#x-codeSamples) - specify operation code samples
+* [`x-badges`](docs/redoc-vendor-extensions.md#x-badges) - specify operation badges
+* [`x-examples`](docs/redoc-vendor-extensions.md#x-examples) - specify JSON example for requests
+* [`x-nullable`](docs/redoc-vendor-extensions.md#x-nullable) - mark schema param as a nullable
+* [`x-displayName`](docs/redoc-vendor-extensions.md#x-displayname) - specify human-friendly names for the menu categories
+* [`x-tagGroups`](docs/redoc-vendor-extensions.md#x-tagGroups) - group tags by categories in the side menu
+* [`x-servers`](docs/redoc-vendor-extensions.md#x-servers) - ability to specify different servers for API (backported from OpenAPI 3.0)
+* [`x-additionalPropertiesName`](docs/redoc-vendor-extensions.md#x-additionalPropertiesName) - ability to supply a descriptive name for the additional property keys
+* [`x-summary`](docs/redoc-vendor-extensions.md#x-summary) - for Response object, use as the response button text, with description rendered under the button
+* [`x-explicitMappingOnly`](docs/redoc-vendor-extensions.md#x-explicitMappingOnly) - in Schemas, display a more descriptive property name in objects with additionalProperties when viewing the property list with an object
+
+## Releases
+
+**The README for the `1.x` version is on the [v1.x](https://github.com/Redocly/redoc/tree/v1.x) branch.**
+
+All the 2.x releases are deployed to npm and can be used with Redocly-cdn:
+- particular release, for example, `v2.0.0`: https://cdn.redoc.ly/redoc/v2.0.0/bundles/redoc.standalone.js
+- `latest` release: https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js
+
+Additionally, all the 1.x releases are hosted on our GitHub Pages-based CDN **(deprecated)**:
+- particular release, for example `v1.2.0`: https://rebilly.github.io/ReDoc/releases/v1.2.0/redoc.min.js
+- `v1.x.x` release: https://rebilly.github.io/ReDoc/releases/v1.x.x/redoc.min.js
+- `latest` release: https://rebilly.github.io/ReDoc/releases/latest/redoc.min.js - points to latest 1.x.x release since 2.x releases are not hosted on this CDN but on unpkg.
+
+
+## Development
+see [CONTRIBUTING.md](.github/CONTRIBUTING.md)

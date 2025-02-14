@@ -1,27 +1,39 @@
-*.gem
-*.rbc
-.bundle
-.config
-coverage
-InstalledFiles
-lib/bundler/man
-pkg
-rdoc
-spec/reports
-test/tmp
-test/version_tmp
-tmp
-*.DS_STORE
-build/
-.cache
-.vagrant
-.sass-cache
+### Linux ###
+*~
 
-# YARD artifacts
-.yardoc
-_yardoc
-doc/
-.idea/
+# KDE directory preferences
+.directory
+# OS X folder attributes
+.DS_Store
 
-# Vagrant artifacts
-ubuntu-*-console.log
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+demo/dist/
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules
+
+lib/
+stats.json
+cypress/
+bundles/
+typings/*
+!typings/styled-patch.d.ts
+
+/benchmark/revisions
+
+/coverage
+.ghpages-tmp
+stats.json
+yarn.lock
+.idea
+.vscode
+.eslintcache
