@@ -1,5 +1,5 @@
 ---
-title: Scoreboards
+title: User Data
 deprecated: false
 hidden: false
 metadata:
