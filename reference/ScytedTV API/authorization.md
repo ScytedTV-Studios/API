@@ -40,4 +40,4 @@ If necessary, you can authenticate using basic authentication by placing your us
 https://<username>:<password>@api.scyted.tv/<path>
 ```
 
-> **Note: For enhanced security, it is recommended to use the Bearer Authentication method or URL Token-based methods instead of embedding your username and password in the URL.**
+> **Note: For enhanced security, it is recommended to use the Bearer Authentication method or URL Token-based methods instead of embedding your username and password or token in the URL.**
