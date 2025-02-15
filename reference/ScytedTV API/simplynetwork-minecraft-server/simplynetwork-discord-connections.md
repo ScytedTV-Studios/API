@@ -10,4 +10,3 @@ link:
 metadata:
   robots: index
 ---
-**READ ACCESS REQUIRED**
