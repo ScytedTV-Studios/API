@@ -1,5 +1,5 @@
 ---
-title: ScytedTV
+title: ScytedTV Shows
 deprecated: false
 hidden: false
 link:
