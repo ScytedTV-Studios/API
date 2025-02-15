@@ -1,6 +1,6 @@
 ---
 title: Games
-excerpt: The games on the "Loyd's Helper" discord bot.
+excerpt: The games on the "Loyd's Helper" Discord bot.
 deprecated: false
 hidden: false
 metadata:
