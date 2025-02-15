@@ -1,5 +1,5 @@
 ---
-title: 'Tic Tac Toe: Wins & Losses'
+title: post
 api:
   file: scyted-tv-api.json
   operationId: get_loydshelpergamestic-tac-toewins1{userId}
