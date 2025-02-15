@@ -1,5 +1,5 @@
 ---
-title: Online
+title: online
 api:
   file: scyted-tv-api.json
   operationId: get_seasidedataonline
