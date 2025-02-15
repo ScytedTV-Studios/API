@@ -10,7 +10,7 @@ In order to access certain information via our API, you must use an API token in
 
 **Sign Up:**
 
-In order to sign up to receive an API key, you must either DM `@loydosborne` on Discord, or email `support@scyted.tv` with the following information:
+In order to sign up to receive an API key, you must either DM `@loydosborne` on Discord, or email `api@scyted.tv` with the following information:
 
 * The Name of your app.
 * The intended use of your API access.
