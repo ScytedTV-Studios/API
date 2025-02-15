@@ -9,3 +9,4 @@ hidden: false
 metadata:
   robots: index
 ---
+REQUIRES WRITE ACCESS
