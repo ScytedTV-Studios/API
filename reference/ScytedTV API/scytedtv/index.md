@@ -1,6 +1,6 @@
 ---
 title: ScytedTV Shows
-deprecated: false
+deprecated: true
 hidden: false
 link:
   new_tab: true
