@@ -1,5 +1,5 @@
 ---
-title: Authorization
+title: Authentication
 excerpt: The methods of autorizing requests to the ScytedTV API.
 deprecated: false
 hidden: false
