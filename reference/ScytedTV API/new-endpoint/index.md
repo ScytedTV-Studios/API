@@ -1,4 +1,4 @@
 ---
-title: /loydshelper/games/tic-tac-toe/wins/{userId}
+title: Loyd's Helper
 hidden: false
 ---
