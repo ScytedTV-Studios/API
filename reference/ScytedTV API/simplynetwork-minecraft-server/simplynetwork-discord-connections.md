@@ -4,7 +4,7 @@ api:
   file: scyted-tv-api.json
   operationId: get_simplynetworkconnectionsdiscord
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:
