@@ -26,7 +26,7 @@ https://api.scyted.tv/token/<your_token>/<path>
 
 ## 3. Token in URL Query Parameter
 
-Alternatively, you can add the token as a query parameter to the URL
+Alternatively, you can add the token as a query parameter to the URL.
 
 ```html URL
 https://api.scyted.tv/<path>?token=<your_token>
