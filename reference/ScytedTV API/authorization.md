@@ -12,7 +12,7 @@ To ensure secure access to the API, we provide several authentication methods fo
 
 The preferred method for authenticating requests is by including a Bearer token in the `Authorization` header of your HTTP request. Here's an example:
 
-```http HTTP
+```html HTTP
 Authorization: Bearer <your_token>
 ```
 
@@ -20,7 +20,7 @@ Authorization: Bearer <your_token>
 
 You can include the token directly in the URL path. Ensure that the token is placed after the `/token/` segment, like this:
 
-```text URL
+```html URL
 https://api.scyted.tv/token/<your_token>/<path>
 ```
 
@@ -28,7 +28,7 @@ https://api.scyted.tv/token/<your_token>/<path>
 
 Alternatively, you can add the token as a query parameter to the URL, like this:
 
-```text URL
+```html URL
 https://api.scyted.tv/<path>?token=<your_token>
 ```
 
@@ -36,9 +36,8 @@ https://api.scyted.tv/<path>?token=<your_token>
 
 If necessary, you can authenticate using basic authentication by placing your username and password directly in the URL. The format should look like this:
 
-```text URL
+```html URL
 https://<username>:<password>@api.scyted.tv/<path>
 ```
 
-> \[!NOTE]\
-> For enhanced security, it is recommended to use the Bearer Authentication method or URL Token-based methods instead of embedding your username and password in the URL.
+> **Note: For enhanced security, it is recommended to use the Bearer Authentication method or URL Token-based methods instead of embedding your username and password in the URL.**
